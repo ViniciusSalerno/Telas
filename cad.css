@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://beecorp.com.br/wp-content/uploads/2019/09/seguranca-do-trabalho.png);
+    background-size: cover;
+    font-family: "Tangerine", sans-serif;
+   }
+   
+   .cadastro {
+    width: 350px; 
+    height: 450px;
+    border: 2px solid #000;
+    border-radius: 80px 0px 80px 0px;
+    color: #fff;
+    background-color: rgba(0,0,5,0.8);
+    top: 50%;
+    left: 50%;
+    position: absolute;    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px; 
+   }
+   
+   .usuario {
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 112px;
+   }
+   
+   h1 {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+   }
+   
+   .cadastro p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+   }
+   
+   .cadastro input {
+    width: 100%;
+    margin-bottom: 21px; 
+   }
+   
+   .cadastro input[type="password"], input[type="email"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+   }
+
+   
+   .cadastro input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.2s;
+   }
+   
+   .cadastro input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+   }
+   

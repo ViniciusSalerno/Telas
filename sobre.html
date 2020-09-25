@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sobre</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0%;
+                background-image: url('https://s2.glbimg.com/FY9-og8s-bYW59nDmPC8y99R8EY=/0x0:1400x788/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/K/S/UD9vUFSeWXUTg5GAOgrg/foto-seguranca-freepik-1400x788.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            a{
+                text-decoration: none;
+            }
+            header{
+                background-color:#111;
+                padding: 15px;
+                z-index: 1;
+            }
+            .btn-abrir{
+                color: white;
+                font-size: 25px;
+            }
+            nav{
+                height: 100%;
+                width: 0px;
+                background-color: #111;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 0;
+                overflow: hidden;
+                transition: width 0.3s;
+            }
+            nav a {
+                color: white;
+                font-size: 25px;
+                display: block;
+                padding: 12px 10px 12px 32px;
+            }
+            nav a:hover{
+                color: black;
+                background-color: white;
+            }
+            main{
+                padding: 20px;
+                transition: margin-left 0.5s;
+            }
+            .sidenav {
+                height: 100%;
+                width: 180px;
+                position: fixed;
+                z-index: 0;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 20px;
+                color: #818181;
+                display: block;
+            }
+            .main {
+                margin-left: 180px;
+                padding: 0px 10px;
+            }
+            .sidenav a:hover {
+                color: #f1f1f1;
+            }
+            @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+            }
+        </style>
+        <script>
+            function abrirMenu(){
+                side_nav = document.getElementById("side-nav");
+                main = document.getElementById("main");
+                side_nav.hidden = false;
+                main.classList.add("main");
+            }
+            function fecharMenu(){
+                side_nav = document.getElementById("side-nav");
+                main = document.getElementById("main");
+                side_nav.hidden = true;
+                main.classList.remove("main");
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <a href="#" onclick="abrirMenu()" class="btn-abrir">&#9776;Menu</a>
+            <input type="text" placeholder="buscar" size="40" style=" position:absolute;top:11;right:0; font-size: medium; text-align: center; text-align-last: center; line-height: 20px; height: 20px">
+        </header>
+        <div class="sidenav" hidden id="side-nav">
+            <a href="#" onclick="fecharMenu()">&times;</a>
+            <br>
+            <a href="inicio.html">Inicio</a>
+            <a href="#informacoes">Informações</a>
+            <a href="#recomendacoes">Recomendações</a>
+            <a href="#exercicios">Exercícios</a>
+            <a href="turmas.html">Turmas</a>
+            <a href="sobre.html">Sobre</a>
+        </div>
+        <main id="main">
+            <div>
+                <h1 style="text-align: center;">Sobre o Sistema</h1>
+            </div>
+            <b>
+                <br><br>
+                <P style="text-align: center;">Equipe de Desenvolvedores :</P>
+                <P style="text-align: center;">Gabriel Silva</P>
+                <P style="text-align: center;">Matheus Carvalho</P>
+                <P style="text-align: center;">Vinicius Salerno</P>
+                <div style="position: absolute; bottom: 0; right: 0;">
+                    <P style="text-align: center; color: #f1f1f1;">Versão do Sistema : 0.1 beta do beta</P>
+                </div>
+            </b>
+        </main>
+    </body>
+</html>
