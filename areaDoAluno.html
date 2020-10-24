@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Inicio</title>
+        <title>Sobre</title>
+        <link rel="stylesheet" href="grid.css">
         <style>
             body{
                 font-family: Arial, Helvetica, sans-serif;
                 margin: 0%;
-                background-image: url('https://s2.glbimg.com/FY9-og8s-bYW59nDmPC8y99R8EY=/0x0:1400x788/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/K/S/UD9vUFSeWXUTg5GAOgrg/foto-seguranca-freepik-1400x788.png');
+                background-color: rgb(25, 25, 25);
                 background-repeat: no-repeat;
                 background-attachment: fixed;
                 background-size: cover;
@@ -54,7 +55,7 @@
                 height: 100%;
                 width: 180px;
                 position: fixed;
-                z-index: 0;
+                z-index: 1;
                 top: 0;
                 left: 0;
                 background-color: #111;
@@ -93,6 +94,9 @@
                 side_nav.hidden = true;
                 main.classList.remove("main");
             }
+            function mostrarMensagem(){
+                alert("Comming Soon!");
+            }
         </script>
     </head>
     <body>
@@ -112,7 +116,36 @@
             <a href="sobre.html">Sobre</a>
         </div>
         <main id="main">
-            <h1 style="text-align: center;">SEGURANÇA DO TRABALHO</h1>
+            <div class="grid-container">
+                <a href="" onclick="mostrarMensagem()">
+                    <div class="grid-item item1">
+                        <div style="border-style: solid; background-color:gray; opacity: 0.8;">
+                            Conteúdo
+                        </div>
+                    </div>
+                </a>
+                <a href="" onclick="mostrarMensagem()">
+                    <div class="grid-item item2">
+                        <div style="border-style: solid; background-color:gray; opacity: 0.8;">
+                            Regras
+                        </div>
+                    </div>
+                </a>
+                <a href="" onclick="mostrarMensagem()">
+                    <div class="grid-item item3">
+                        <div style="border-style: solid; background-color:gray; opacity: 0.8;">
+                            Normas
+                        </div>
+                    </div>
+                </a>
+                <a href="" onclick="mostrarMensagem()">
+                    <div class="grid-item item4">
+                        <div style="border-style: solid; background-color:gray; opacity: 0.8;">
+                            Leis
+                        </div>
+                    </div>
+                </a>
+            </div>
         </main>
     </body>
 </html>
